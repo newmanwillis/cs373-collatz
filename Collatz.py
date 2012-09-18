@@ -83,13 +83,10 @@ def collatz_eval (i, j) :
             
         if (currentCycleLength > maxCycleLength) :
             maxCycleLength = currentCycleLength
-        # if(cache[x] == 0) :
-        #     cache[x] = currentCycleLength
-        
+
         if(num < 1000000) :
             cache[x] = currentCycleLength   
-#        print "outer" 
-    """print i, j, maxCycleLength  """ 
+
     assert maxCycleLength > 0
     return maxCycleLength
 
