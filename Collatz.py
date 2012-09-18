@@ -62,10 +62,7 @@ def collatz_eval (i, j) :
         currentCycleLength = 1
         
         while(num != 1) :
-            
-            '''if(cache[num] == 0) :
-                cache[num] = currentCycleLength'''
-            
+
             if(num < 1000000 and cache[num] != 0) :
                 currentCycleLength += cache[num] - 1
                 break
