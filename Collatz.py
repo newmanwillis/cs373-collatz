@@ -46,7 +46,6 @@ def collatz_eval (i, j) :
     assert i > 0
     assert j > 0
     # <your code>
-    """assert j >= i"""
 
     if( i > j) :
         temp = i
