@@ -62,7 +62,6 @@ def collatz_eval (i, j) :
         currentCycleLength = 1
         
         while(num != 1) :
-
             if(num < 1000000 and cache[num] != 0) :
                 currentCycleLength += cache[num] - 1
                 break
@@ -77,13 +76,10 @@ def collatz_eval (i, j) :
                 num = num / 2
             else :
                 num = num * 3 + 1"""
-            """currentCycleLength = currentCycleLength + 1
-            print "NUM", num"""
-            """cache[num] = currentCycleLength"""
+            """currentCycleLength = currentCycleLength + 1"""
             
         if (currentCycleLength > maxCycleLength) :
             maxCycleLength = currentCycleLength
-
         if(num < 1000000) :
             cache[x] = currentCycleLength   
 
